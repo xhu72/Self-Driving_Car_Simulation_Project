@@ -20,22 +20,71 @@ However, it fails because the file "package_list(2).txt"  contains strict "build
 
 To bypass this issue, we can extract just the package names and versions into a standard pip requirements.txt file.
 
-# Setting Up Your Conda Environment from `requirements.txt`
 
-Since we already generated the `requirements.txt` file, you can follow these steps:
 
-## 1. Create the new environment
+# Self-Driving Car Simulation Project Setup from `requirements.txt`
 
-```powershell
-conda create --name final_project python=3.8.12 -y
+## 1. Create Project Folder
+```bash
+mkdir computer_vision
+cd computer_vision
 ```
-## 2. Activate the environment
 
-```powershell
+
+## 2. Check Python Installation
+```bash
+python --version
+```
+(if not installed, install it version 3.11.1)
+
+## 3. Create Virtual Environment
+in cmd
+```bash
+C:\Users\larry\AppData\Local\Programs\Python\Python311\python.exe -m venv venv311 
+```
+or
+
+```bash
+python -m venv venv
+```
+
+## 4. Activate Virtual Environment (PowerShell)
+```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\activate
+```
+
+## 5. Clone Repository
+```bash
+cd venv
+git clone https://github.com/xhu72/Self-Driving_Car_Simulation_Project.git
+cd .\Self-Driving_Car_Simulation_Project\
+```
+
+## 6. Check Conda Installation
+```bash
+where conda 
+```
+(If not installed, install Miniconda or Anaconda)
+
+## 7. Create Conda Environment
+```bash
+conda create --name final_project python=3.11 -y
 conda activate final_project
 ```
 
-## 3. Install the dependencies
+## 8. Upgrade pip
+```bash
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install --upgrade pip
+```
 
-```powershell
-pip install -r requirements.txt
+## 9. Install Critical Packages (via conda)
+```bash
+conda install h5py yarl greenlet
+```
+
+## 10. Install Remaining Dependencies
+```bash
+python -m pip install -r env/requirements.txt
+```
