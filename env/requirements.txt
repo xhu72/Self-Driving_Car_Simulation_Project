@@ -40,7 +40,7 @@ markupsafe==2.0.1
 monotonic==1.6
 multidict==5.1.0
 networkx==2.8.3
-numpy==1.22.0
+numpy==1.23.5
 oauthlib==3.1.1
 opt_einsum==3.3.0
 pandas==1.5.3
