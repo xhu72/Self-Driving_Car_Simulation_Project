@@ -66,7 +66,7 @@ def sendControl(steering, throttle):
 if __name__ == "__main__":
     model = build_model() #recreate the CNN structure before loading the weights. makes sure your architecture is the same as it was in train.py
     #important!!, must change this to the last created model (model with biggest number in the title after running train.py) 
-    model.load_weights('models/model-018.h5') #load the trained params into the neural network structure 
+    model.load_weights('models/model-015.h5') #load the trained params into the neural network structure 
     
     app = socketio.Middleware(sio, app)
     eventlet.wsgi.server(eventlet.listen(('', 4567)), app)
