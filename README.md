@@ -79,3 +79,6 @@ Once you see the main Udacity Car Driving Simulator screen, click on "autonomous
 
 You should now see the car driving automously! 
 
+__UDACITY CAR SIMULATION DEMO__
+
+See the demo of self-driving simulation using CNN [here](https://youtu.be/aMdI5PAKO64).
