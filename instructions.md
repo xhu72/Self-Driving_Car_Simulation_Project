@@ -1,3 +1,4 @@
+__ENVIRONMENT SETUP__
 
 To create an exact conda environment from `environment.yml` :
 
@@ -40,3 +41,37 @@ Now to activate the env, run:
 conda activate car-cnn
 
 ```
+
+
+
+
+
+
+__TO RUN THE CODE__
+
+Be in the project root folder
+
+Run the following commands:
+
+
+``` bash
+python -m src.config
+python -m src.augmentations
+python -m src.data_generator
+python -m src.dataset
+python -m src.image_utils
+python -m src.model
+
+python train.py
+python TestSimulation.py 
+```
+
+
+__TO SEE HOW THE CODE RUNS IN THE UDACITY CAR SIMULATOR__
+
+After running "python TestSimulation.py ", open your __beta_simulator.exe__, in the popup model, click "Play!". 
+Once you see the main Udacity Car Driving Simulator screen, click on "autonomous mode".
+
+
+You should now see the car driving automously! 
+
