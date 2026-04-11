@@ -17,6 +17,7 @@ plt.title("Distribution for steering angle")
 plt.ylabel("Number of Samples")
 plt.xlabel("Steering Angle ")
 plt.grid(True)
+plt.savefig("figures/steering_angle_distribution.png", dpi=300, bbox_inches='tight')
 plt.show()
 
 

@@ -14,7 +14,7 @@ def train_model(model, X_train, X_valid, y_train, y_valid):
     steps_per_epoch = len(X_train) // batch_size
     validation_steps = len(X_valid) // batch_size
 
-    checkpoint = ModelCheckpoint('model-{epoch:03d}.h5',
+    checkpoint = ModelCheckpoint('models/model-{epoch:03d}.h5',
                                  monitor='val_loss',
                                  verbose=1,
                                  save_best_only=True,
@@ -62,7 +62,7 @@ def train_model(model, X_train, X_valid, y_train, y_valid):
     plt.legend()
     
     plt.tight_layout()
-    plt.savefig('training_metrics.png')
+    plt.savefig('figures/training_metrics.png')
     plt.show()
 
 def main():
