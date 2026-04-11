@@ -66,6 +66,10 @@ python train.py
 python TestSimulation.py 
 ```
 
+If TestSimulation.py does not run, that likely that means the specified model in TestSimulation.py does not exist (ex: model-012.h5), in that case, change the model name to the one with the biggest numeric value in the following line of code:  
+``` bash
+model.load_weights('model-012.h5')
+```
 
 __TO SEE HOW THE CODE RUNS IN THE UDACITY CAR SIMULATOR__
 
