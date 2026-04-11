@@ -41,7 +41,6 @@ Now to activate the env, run:
 conda activate car-cnn
 
 ```
-```
 
 __APPROACH__
 The solution is reliant on Behavioural Cloning to teach Convolutional Neural Network (CNN) to steer the  car autonomously in Udacity simulator.
